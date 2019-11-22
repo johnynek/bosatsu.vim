@@ -16,7 +16,7 @@ syn keyword bosatsuKeywords
   \ struct
 
 syn match bosatsuComment "#.*$"
-syntax match bosatsuNumber "\v<\d[\d_]*>"
+syntax match bosatsuNumber "\v<\d(\d|_)*>"
 
 syntax region bosatsuString start=/"/ skip=/\\"/ end=/"/
 syntax region bosatsuString start=/'/ skip=/\\'/ end=/'/
